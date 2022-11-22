@@ -12,13 +12,16 @@ protocol ArticlesViewLogic: AnyObject  {
 }
 
 class ArticlesViewController: UIViewController {
+    
+    //MARK: - Properties
 
     @IBOutlet weak var tableView: UITableView!
     
     private(set) var router: ArticlesRouterLogic?
-    
     private var interactor: ArticlesBuisnessLogic?
     private var dataToDisplay = [ArticleCellModel]()
+    
+    //MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +30,8 @@ class ArticlesViewController: UIViewController {
         configureTableView()
         interactor?.fetchArticles()
     }
+    
+    //MARK: - Actions
     
     private func setup() {
         let viewController = self
@@ -49,6 +54,9 @@ class ArticlesViewController: UIViewController {
     }
 }
 
+
+//MARK: - Extensions
+
 extension ArticlesViewController: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -70,11 +78,13 @@ extension ArticlesViewController: UITableViewDelegate, UITableViewDataSource {
     }
 }
 
+
 extension ArticlesViewController: ArticleCellDelegate {
-    func didArticleTap(articleID: Int) {
-        router?.showDetaild(articleID: articleID)
+    func didArticleTap(articleID: Int, title: String, text: String) {
+        router?.showDetaild(articleID: articleID, title: title, text: text)
     }
 }
+
 
 extension ArticlesViewController: ArticlesViewLogic {
     func display(data: [ArticleCellModel]) {

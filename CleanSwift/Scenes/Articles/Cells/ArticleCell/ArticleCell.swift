@@ -8,10 +8,13 @@
 import UIKit
 
 protocol ArticleCellDelegate: AnyObject {
-    func didArticleTap(articleID: Int)
+    func didArticleTap(articleID: Int, title: String, text: String)
 }
 
+
 class ArticleCell: UITableViewCell {
+    
+    //MARK: - Properties
     
     static let cellID = "ArticleCell"
     
@@ -22,6 +25,8 @@ class ArticleCell: UITableViewCell {
     @IBOutlet weak var txtTitle: UILabel!
     @IBOutlet weak var txtBody: UILabel!
 
+    //MARK: - Methods
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -32,7 +37,9 @@ class ArticleCell: UITableViewCell {
     
     @IBAction func didNextTap(_ sender: Any) {
         guard let articleID = articleID else { return }
-        delegate?.didArticleTap(articleID: articleID)
+        guard let title = txtTitle.text else { return }
+        guard let text = txtBody.text else { return }
+        delegate?.didArticleTap(articleID: articleID, title: title, text: text)
     }
     
     func setup(data: ArticleCellModel) {

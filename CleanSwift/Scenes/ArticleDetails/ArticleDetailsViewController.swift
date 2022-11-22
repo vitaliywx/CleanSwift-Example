@@ -8,8 +8,9 @@
 import UIKit
 
 protocol ArticleDetailsViewLogic: AnyObject  {
-
+    
 }
+
 
 class ArticleDetailsViewController: UIViewController {
     
@@ -18,6 +19,8 @@ class ArticleDetailsViewController: UIViewController {
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var bodyText: UITextView!
+    
+    private var dataToDisplay = [ArticleCellModel]()
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -34,19 +37,19 @@ class ArticleDetailsViewController: UIViewController {
         interactor?.fetchDetails()
         titleLabel.text = interactor?.title
         bodyText.textContainer.lineFragmentPadding = 0
+        bodyText.text = interactor?.text
     }
     
     private func setup() {
         let viewController = self
         let interactor = ArticleDetailInteractor()
         let router = ArticleDetailRouter()
-        let presenter = ArticlesPresenter()
         router.dataStore = interactor
         viewController.interactor = interactor
         viewController.router = router
     }
-    
 }
+
 
 extension ArticleDetailsViewController: ArticleDetailsViewLogic {
 

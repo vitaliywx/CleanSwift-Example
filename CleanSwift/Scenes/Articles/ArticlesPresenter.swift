@@ -11,9 +11,11 @@ protocol ArticlesPresenterLogic {
     func present(data: [ArticleBackendModel])
 }
 
+
 class ArticlesPresenter {
     weak var viewController: ArticlesViewLogic?
 }
+
 
 extension ArticlesPresenter: ArticlesPresenterLogic {
     func present(data: [ArticleBackendModel]) {

@@ -11,23 +11,25 @@ protocol ArticleDetailBuisnessLogic {
     func fetchDetails()
 }
 
+
 protocol ArticleDetailStoreProtocol: AnyObject {
     var articleID: Int { get set }
     var title: String { get set }
-    
+    var text: String { get set }
 }
+
 
 class ArticleDetailInteractor: ArticleDetailStoreProtocol {
     
     weak var viewController: ArticleDetailsViewController?
     var articleID: Int = -1
     var title: String = "Hola, amigo"
-    
+    var text: String = "..."
 }
+
 
 extension ArticleDetailInteractor: ArticleDetailBuisnessLogic {
     func fetchDetails() {
-        print("articleID \(articleID)")
+        print("article ID - 00\(articleID)")
     }
-    
 }

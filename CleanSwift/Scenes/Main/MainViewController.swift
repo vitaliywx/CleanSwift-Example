@@ -9,13 +9,19 @@ import UIKit
 
 class MainViewController: UIViewController {
     
+    //MARK: - Properties
+    
     private var router: MainRouterLogic?
+    
+    //MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
     }
 
+    //MARK: - Actions
+    
     @IBAction func showArticlesTap(_ sender: Any) {
         router?.showArticles()
     }

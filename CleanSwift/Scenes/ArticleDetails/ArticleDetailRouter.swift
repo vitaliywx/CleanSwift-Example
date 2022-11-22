@@ -8,16 +8,19 @@
 import Foundation
 
 protocol ArticleDetailRouterLogic {
-    
+//    func showDetaild(title: String, text: String)
 }
+
 
 protocol ArticleDetailDataPassingProtocol {
     var dataStore: ArticleDetailStoreProtocol? { get }
 }
 
+
 class ArticleDetailRouter: ArticleDetailDataPassingProtocol {
     var dataStore: ArticleDetailStoreProtocol?
 }
+
 
 extension ArticleDetailRouter: ArticleDetailRouterLogic {
     

@@ -8,7 +8,7 @@
 import Foundation
 
 struct ArticleBackendModel {
-    let articleID: String
+    var articleID: String
     let name: String
     let text: String
     let rate: Int
