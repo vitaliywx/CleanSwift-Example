@@ -23,11 +23,11 @@
 		D3C27191292CC55C00A148F5 /* ArticleBackendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C27190292CC55C00A148F5 /* ArticleBackendModel.swift */; };
 		D3C27193292CE04500A148F5 /* ArticlesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C27192292CE04500A148F5 /* ArticlesRouter.swift */; };
 		D3C27196292CE13F00A148F5 /* ArticleDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C27195292CE13F00A148F5 /* ArticleDetailsViewController.swift */; };
-		D3C27198292CE18800A148F5 /* ArticleDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C27197292CE18800A148F5 /* ArticleDetailsInteractor.swift */; };
-		D3C2719A292CE1C100A148F5 /* ArticleDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C27199292CE1C100A148F5 /* ArticleDetailsRouter.swift */; };
+		D3C27198292CE18800A148F5 /* ArticleDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C27197292CE18800A148F5 /* ArticleDetailInteractor.swift */; };
 		D3C2719C292CE1F400A148F5 /* ArticleDetailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3C2719B292CE1F400A148F5 /* ArticleDetailsViewController.storyboard */; };
 		D3C2719E292CE59900A148F5 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C2719D292CE59900A148F5 /* MainRouter.swift */; };
 		D3C271A2292D091000A148F5 /* ArticleDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C271A1292D091000A148F5 /* ArticleDetailPresenter.swift */; };
+		D3C271A6292D20A000A148F5 /* ArticleDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C271A5292D20A000A148F5 /* ArticleDetailRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,11 +49,11 @@
 		D3C27190292CC55C00A148F5 /* ArticleBackendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleBackendModel.swift; sourceTree = "<group>"; };
 		D3C27192292CE04500A148F5 /* ArticlesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesRouter.swift; sourceTree = "<group>"; };
 		D3C27195292CE13F00A148F5 /* ArticleDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailsViewController.swift; sourceTree = "<group>"; };
-		D3C27197292CE18800A148F5 /* ArticleDetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailsInteractor.swift; sourceTree = "<group>"; };
-		D3C27199292CE1C100A148F5 /* ArticleDetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailsRouter.swift; sourceTree = "<group>"; };
+		D3C27197292CE18800A148F5 /* ArticleDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailInteractor.swift; sourceTree = "<group>"; };
 		D3C2719B292CE1F400A148F5 /* ArticleDetailsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ArticleDetailsViewController.storyboard; sourceTree = "<group>"; };
 		D3C2719D292CE59900A148F5 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
 		D3C271A1292D091000A148F5 /* ArticleDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailPresenter.swift; sourceTree = "<group>"; };
+		D3C271A5292D20A000A148F5 /* ArticleDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,8 +178,8 @@
 				D3C2719B292CE1F400A148F5 /* ArticleDetailsViewController.storyboard */,
 				D3C27195292CE13F00A148F5 /* ArticleDetailsViewController.swift */,
 				D3C271A1292D091000A148F5 /* ArticleDetailPresenter.swift */,
-				D3C27197292CE18800A148F5 /* ArticleDetailsInteractor.swift */,
-				D3C27199292CE1C100A148F5 /* ArticleDetailsRouter.swift */,
+				D3C27197292CE18800A148F5 /* ArticleDetailInteractor.swift */,
+				D3C271A5292D20A000A148F5 /* ArticleDetailRouter.swift */,
 			);
 			path = ArticleDetails;
 			sourceTree = "<group>";
@@ -266,12 +266,12 @@
 				D3C27163292CA47000A148F5 /* AppDelegate.swift in Sources */,
 				D3C27181292CAFDE00A148F5 /* ArticlesInteractor.swift in Sources */,
 				D3C27165292CA47000A148F5 /* SceneDelegate.swift in Sources */,
+				D3C271A6292D20A000A148F5 /* ArticleDetailRouter.swift in Sources */,
 				D3C2718E292CC48400A148F5 /* ArticleCellModel.swift in Sources */,
 				D3C27193292CE04500A148F5 /* ArticlesRouter.swift in Sources */,
 				D3C27191292CC55C00A148F5 /* ArticleBackendModel.swift in Sources */,
-				D3C2719A292CE1C100A148F5 /* ArticleDetailsRouter.swift in Sources */,
 				D3C271A2292D091000A148F5 /* ArticleDetailPresenter.swift in Sources */,
-				D3C27198292CE18800A148F5 /* ArticleDetailsInteractor.swift in Sources */,
+				D3C27198292CE18800A148F5 /* ArticleDetailInteractor.swift in Sources */,
 				D3C2717F292CAEA600A148F5 /* ArticlesPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

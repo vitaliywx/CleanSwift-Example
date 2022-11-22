@@ -20,16 +20,6 @@ class ArticlesViewController: UIViewController {
     private var interactor: ArticlesBuisnessLogic?
     private var dataToDisplay = [ArticleCellModel]()
     
-//    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
-//        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-//        setup()
-//    }
-//
-//    required init?(coder: NSCoder) {
-//        super.init(coder: coder)
-//        setup()
-//    }
-
     override func viewDidLoad() {
         super.viewDidLoad()
         

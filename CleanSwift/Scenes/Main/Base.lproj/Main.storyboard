@@ -47,21 +47,6 @@
             </objects>
             <point key="canvasLocation" x="1952.1739130434785" y="-27.455357142857142"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="59a-hl-xh6">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iNF-s0-Cch" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MX4-wn-flN">
-                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lC1-TC-NIn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="570" y="-18"/>
-        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
