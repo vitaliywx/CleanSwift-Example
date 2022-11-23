@@ -8,7 +8,7 @@
 import Foundation
 
 protocol ArticlesPresenterLogic {
-    func present(data: [ArticleBackendModel])
+    func present(data: [ArticleServerModel])
 }
 
 
@@ -18,7 +18,7 @@ class ArticlesPresenter {
 
 
 extension ArticlesPresenter: ArticlesPresenterLogic {
-    func present(data: [ArticleBackendModel]) {
+    func present(data: [ArticleServerModel]) {
         let viewModel = data.map { model -> ArticleCellModel in
             let cellModel = ArticleCellModel(
                 articleID: Int(model.articleID) ?? 0,

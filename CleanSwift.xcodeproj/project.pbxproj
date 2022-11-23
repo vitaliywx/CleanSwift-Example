@@ -20,7 +20,7 @@
 		D3C2718B292CC2CA00A148F5 /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C27189292CC2CA00A148F5 /* ArticleCell.swift */; };
 		D3C2718C292CC2CA00A148F5 /* ArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3C2718A292CC2CA00A148F5 /* ArticleCell.xib */; };
 		D3C2718E292CC48400A148F5 /* ArticleCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C2718D292CC48400A148F5 /* ArticleCellModel.swift */; };
-		D3C27191292CC55C00A148F5 /* ArticleBackendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C27190292CC55C00A148F5 /* ArticleBackendModel.swift */; };
+		D3C27191292CC55C00A148F5 /* ArticleServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C27190292CC55C00A148F5 /* ArticleServerModel.swift */; };
 		D3C27193292CE04500A148F5 /* ArticlesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C27192292CE04500A148F5 /* ArticlesRouter.swift */; };
 		D3C27196292CE13F00A148F5 /* ArticleDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C27195292CE13F00A148F5 /* ArticleDetailsViewController.swift */; };
 		D3C27198292CE18800A148F5 /* ArticleDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C27197292CE18800A148F5 /* ArticleDetailInteractor.swift */; };
@@ -46,7 +46,7 @@
 		D3C27189292CC2CA00A148F5 /* ArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
 		D3C2718A292CC2CA00A148F5 /* ArticleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleCell.xib; sourceTree = "<group>"; };
 		D3C2718D292CC48400A148F5 /* ArticleCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCellModel.swift; sourceTree = "<group>"; };
-		D3C27190292CC55C00A148F5 /* ArticleBackendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleBackendModel.swift; sourceTree = "<group>"; };
+		D3C27190292CC55C00A148F5 /* ArticleServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleServerModel.swift; sourceTree = "<group>"; };
 		D3C27192292CE04500A148F5 /* ArticlesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesRouter.swift; sourceTree = "<group>"; };
 		D3C27195292CE13F00A148F5 /* ArticleDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailsViewController.swift; sourceTree = "<group>"; };
 		D3C27197292CE18800A148F5 /* ArticleDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailInteractor.swift; sourceTree = "<group>"; };
@@ -168,7 +168,7 @@
 		D3C2718F292CC54400A148F5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				D3C27190292CC55C00A148F5 /* ArticleBackendModel.swift */,
+				D3C27190292CC55C00A148F5 /* ArticleServerModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -269,7 +269,7 @@
 				D3C271A6292D20A000A148F5 /* ArticleDetailRouter.swift in Sources */,
 				D3C2718E292CC48400A148F5 /* ArticleCellModel.swift in Sources */,
 				D3C27193292CE04500A148F5 /* ArticlesRouter.swift in Sources */,
-				D3C27191292CC55C00A148F5 /* ArticleBackendModel.swift in Sources */,
+				D3C27191292CC55C00A148F5 /* ArticleServerModel.swift in Sources */,
 				D3C27198292CE18800A148F5 /* ArticleDetailInteractor.swift in Sources */,
 				D3C271A8292D61BC00A148F5 /* Identifiers.swift in Sources */,
 				D3C2717F292CAEA600A148F5 /* ArticlesPresenter.swift in Sources */,

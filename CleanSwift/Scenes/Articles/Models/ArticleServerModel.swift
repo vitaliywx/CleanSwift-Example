@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ArticleBackendModel {
+struct ArticleServerModel {
     var articleID: String
     let name: String
     let text: String
