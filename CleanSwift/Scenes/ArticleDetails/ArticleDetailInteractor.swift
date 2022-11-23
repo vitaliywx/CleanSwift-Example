@@ -22,9 +22,9 @@ protocol ArticleDetailStoreProtocol: AnyObject {
 class ArticleDetailInteractor: ArticleDetailStoreProtocol {
     
     weak var viewController: ArticleDetailsViewController?
-    var articleID: Int = -1
-    var title: String = "Hola, amigo"
-    var text: String = "..."
+    var articleID: Int = 0
+    var title: String = ""
+    var text: String = ""
 }
 
 

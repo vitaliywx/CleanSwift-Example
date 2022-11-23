@@ -14,14 +14,17 @@ protocol ArticleDetailsViewLogic: AnyObject  {
 
 class ArticleDetailsViewController: UIViewController {
     
+    //MARK: - Properties
+    
+    static let id = "ArticleDetailsViewController"
+    
     private(set) var router: (ArticleDetailRouterLogic & ArticleDetailDataPassingProtocol)?
     private var interactor: (ArticleDetailBuisnessLogic & ArticleDetailStoreProtocol)?
+    private var dataToDisplay = [ArticleCellModel]()
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var bodyText: UITextView!
-    
-    private var dataToDisplay = [ArticleCellModel]()
-    
+        
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         setup()
@@ -32,6 +35,8 @@ class ArticleDetailsViewController: UIViewController {
         setup()
     }
     
+    //MARK: - Lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         interactor?.fetchDetails()
@@ -39,6 +44,8 @@ class ArticleDetailsViewController: UIViewController {
         bodyText.textContainer.lineFragmentPadding = 0
         bodyText.text = interactor?.text
     }
+    
+    //MARK: - Actions
     
     private func setup() {
         let viewController = self
@@ -50,6 +57,8 @@ class ArticleDetailsViewController: UIViewController {
     }
 }
 
+
+//MARK: - Extensions
 
 extension ArticleDetailsViewController: ArticleDetailsViewLogic {
 

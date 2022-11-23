@@ -8,7 +8,7 @@
 import Foundation
 
 protocol ArticleDetailRouterLogic {
-//    func showDetaild(title: String, text: String)
+
 }
 
 

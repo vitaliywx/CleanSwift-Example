@@ -11,6 +11,8 @@ class MainViewController: UIViewController {
     
     //MARK: - Properties
     
+    static let id = "MainViewController"
+    
     private var router: MainRouterLogic?
     
     //MARK: - Lifecycle

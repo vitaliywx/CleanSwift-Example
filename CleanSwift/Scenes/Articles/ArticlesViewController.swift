@@ -11,9 +11,12 @@ protocol ArticlesViewLogic: AnyObject  {
     func display(data: [ArticleCellModel])
 }
 
+
 class ArticlesViewController: UIViewController {
     
     //MARK: - Properties
+    
+    static let id = "ArticlesViewController"
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -50,7 +53,7 @@ class ArticlesViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.tableFooterView = UIView(frame: .zero)
-        tableView.register(UINib(nibName: "ArticleCell", bundle: nil), forCellReuseIdentifier: ArticleCell.cellID)
+        tableView.register(UINib(nibName: ArticleCell.id, bundle: nil), forCellReuseIdentifier: ArticleCell.id)
     }
 }
 
@@ -67,7 +70,7 @@ extension ArticlesViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: ArticleCell.cellID, for: indexPath) as? ArticleCell else { return UITableViewCell() }
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: ArticleCell.id, for: indexPath) as? ArticleCell else { return UITableViewCell() }
         cell.setup(data: dataToDisplay[indexPath.row])
         cell.delegate = self
         return cell

@@ -18,7 +18,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow(windowScene: windowScene)
         self.window = window
         let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc: UIViewController = storyboard.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
+        let vc: UIViewController = storyboard.instantiateViewController(withIdentifier: MainViewController.id) as! MainViewController
         let nav = UINavigationController()
         nav.viewControllers = [vc]
         window.rootViewController = nav

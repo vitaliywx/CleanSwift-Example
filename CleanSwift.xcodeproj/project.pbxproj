@@ -27,6 +27,7 @@
 		D3C2719C292CE1F400A148F5 /* ArticleDetailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3C2719B292CE1F400A148F5 /* ArticleDetailsViewController.storyboard */; };
 		D3C2719E292CE59900A148F5 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C2719D292CE59900A148F5 /* MainRouter.swift */; };
 		D3C271A6292D20A000A148F5 /* ArticleDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C271A5292D20A000A148F5 /* ArticleDetailRouter.swift */; };
+		D3C271A8292D61BC00A148F5 /* Identifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C271A7292D61BC00A148F5 /* Identifiers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		D3C2719B292CE1F400A148F5 /* ArticleDetailsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ArticleDetailsViewController.storyboard; sourceTree = "<group>"; };
 		D3C2719D292CE59900A148F5 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
 		D3C271A5292D20A000A148F5 /* ArticleDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailRouter.swift; sourceTree = "<group>"; };
+		D3C271A7292D61BC00A148F5 /* Identifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 		D3C27182292CB0B700A148F5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D3C271A7292D61BC00A148F5 /* Identifiers.swift */,
 				D3C2716B292CA47300A148F5 /* Assets.xcassets */,
 				D3C2716D292CA47300A148F5 /* LaunchScreen.storyboard */,
 				D3C27170292CA47300A148F5 /* Info.plist */,
@@ -268,6 +271,7 @@
 				D3C27193292CE04500A148F5 /* ArticlesRouter.swift in Sources */,
 				D3C27191292CC55C00A148F5 /* ArticleBackendModel.swift in Sources */,
 				D3C27198292CE18800A148F5 /* ArticleDetailInteractor.swift in Sources */,
+				D3C271A8292D61BC00A148F5 /* Identifiers.swift in Sources */,
 				D3C2717F292CAEA600A148F5 /* ArticlesPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

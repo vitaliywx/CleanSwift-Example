@@ -19,8 +19,8 @@ class ArticlesRouter {
 
 extension ArticlesRouter: ArticlesRouterLogic {
     func showDetaild(articleID: Int, title: String, text: String) {
-        let storyboard = UIStoryboard.init(name: "ArticleDetailsViewController", bundle: nil)
-        guard let vc = storyboard.instantiateViewController(withIdentifier: "ArticleDetailsViewController") as? ArticleDetailsViewController else { return }
+        let storyboard = UIStoryboard.init(name: ArticleDetailsViewController.id, bundle: nil)
+        guard let vc = storyboard.instantiateViewController(withIdentifier: ArticleDetailsViewController.id) as? ArticleDetailsViewController else { return }
         
         vc.router?.dataStore?.articleID = articleID
         vc.router?.dataStore?.title = title

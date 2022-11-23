@@ -19,9 +19,9 @@ class MainRouter {
 
 extension MainRouter: MainRouterLogic {
     func showArticles() {
-        let storyboard = UIStoryboard.init(name: "ArticlesViewController", bundle: nil)
+        let storyboard = UIStoryboard.init(name: ArticlesViewController.id, bundle: nil)
         let vc = storyboard.instantiateViewController(
-            withIdentifier: "ArticlesViewController") as? ArticlesViewController ?? UIViewController()
+            withIdentifier: ArticlesViewController.id) as? ArticlesViewController ?? UIViewController()
         viewController?.navigationController?.pushViewController(vc, animated: true)
     }
 }

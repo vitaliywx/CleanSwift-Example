@@ -16,7 +16,7 @@ class ArticleCell: UITableViewCell {
     
     //MARK: - Properties
     
-    static let cellID = "ArticleCell"
+    static let id = "ArticleCell"
     
     weak var delegate: ArticleCellDelegate?
 
@@ -25,7 +25,7 @@ class ArticleCell: UITableViewCell {
     @IBOutlet weak var txtTitle: UILabel!
     @IBOutlet weak var txtBody: UILabel!
 
-    //MARK: - Methods
+    //MARK: - Functions
     
     override func awakeFromNib() {
         super.awakeFromNib()
