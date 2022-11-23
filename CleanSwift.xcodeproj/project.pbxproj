@@ -27,6 +27,7 @@
 		D3C2719C292CE1F400A148F5 /* ArticleDetailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3C2719B292CE1F400A148F5 /* ArticleDetailsViewController.storyboard */; };
 		D3C2719E292CE59900A148F5 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C2719D292CE59900A148F5 /* MainRouter.swift */; };
 		D3C271A6292D20A000A148F5 /* ArticleDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C271A5292D20A000A148F5 /* ArticleDetailRouter.swift */; };
+		D3C271AA292DFE3B00A148F5 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D3C271A9292DFE3B00A148F5 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		D3C2719B292CE1F400A148F5 /* ArticleDetailsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ArticleDetailsViewController.storyboard; sourceTree = "<group>"; };
 		D3C2719D292CE59900A148F5 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
 		D3C271A5292D20A000A148F5 /* ArticleDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailRouter.swift; sourceTree = "<group>"; };
+		D3C271A9292DFE3B00A148F5 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 		D3C27156292CA47000A148F5 = {
 			isa = PBXGroup;
 			children = (
+				D3C271A9292DFE3B00A148F5 /* .gitignore */,
 				D3C27161292CA47000A148F5 /* CleanSwift */,
 				D3C27160292CA47000A148F5 /* Products */,
 			);
@@ -240,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3C2716F292CA47300A148F5 /* LaunchScreen.storyboard in Resources */,
+				D3C271AA292DFE3B00A148F5 /* .gitignore in Resources */,
 				D3C2716C292CA47300A148F5 /* Assets.xcassets in Resources */,
 				D3C2717D292CADA300A148F5 /* ArticlesViewController.storyboard in Resources */,
 				D3C2718C292CC2CA00A148F5 /* ArticleCell.xib in Resources */,
